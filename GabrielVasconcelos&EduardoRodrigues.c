@@ -1,5 +1,5 @@
 // Aluno : Gabriel de Medeiros Vasconcelos e Eduardo Rodrigues de Morais
-// MatrÌcula: UC16100459 / UC15000222
+// Matr√≠cula: UC16100459 / UC15000222
 
 
 #include <stdio.h>
@@ -74,69 +74,69 @@ typedef struct {
 void apresentaTodosProp();
 void apresentaManuTempo();
 void apresentaTodosVeic();			
-void apresentaNomeOficina(int linha, int coluna,char resp);	
+void apresentaNomeOficina(int , int ,char );	
 void apresentaTodasManu();
 void apresentaDadosPropNom();
 void excluiManutencao();
-int recuperaDadosManutencao(int posicao, Manutencao *manutencao);
+int recuperaDadosManutencao(int , Manutencao *);
 int apresentaManutencoes();
-int menuSimNao(char *msg);
-int verificaExisteManutencaoCarro(char *placa);
+int menuSimNao(char *);
+int verificaExisteManutencaoCarro(char *);
 void excluiVeiculo() ;
-void gravaDadosVeiculo(Veiculo *veiculo, int posicao);
-void apresentaVeiculo(Veiculo veiculo);
-int recuperaDadosVeiculo(int posicao, Veiculo *veiculos) ;
+void gravaDadosVeiculo(Veiculo *, int );
+void apresentaVeiculo(Veiculo );
+int recuperaDadosVeiculo(int , Veiculo *) ;
 void alteraVeiculo();
-void desenhaMoldura(int linhaInicial, int colunaInicial, int linhaFinal, int colunaFinal, int corFundoAtual, int corLetraAtual);
-int menuVertical(int n,char *imenu[],int c1,int c2,int linha,int coluna,int ini, int moldura,int corFundoAtual, int corLetraAtual);
-void retornaCor(int corFundo,int corTexto);
-void limpaJanela(int linhaInicial,int colunaInicial,int linhaFinal, int colFinal,int corFundo);
+void desenhaMoldura(int , int , int , int , int , int );
+int menuVertical(int ,char *imenu[],int ,int ,int ,int ,int , int ,int , int );
+void retornaCor(int ,int );
+void limpaJanela(int ,int ,int , int ,int );
 void menuProprietarios();
 void menuVeiculos();
 void menuManutencao();
 Oficina criaArquivoOficina();
 void pesquisasConsultas();
-void pause(int linha, int coluna);
+void pause(int , int );
 void cadastroProprietario();
-void tiraTerminador(char *texto);
-void leValidaTexto(char *titulo, char *msgErro, char *str, int max, int coluna, int linha);
-void criaArquivoNaoExistente(char *nome);
-void fechaArquivo(FILE *arq);
+void tiraTerminador(char *);
+void leValidaTexto(char *, char *, char *, int , int , int );
+void criaArquivoNaoExistente(char *);
+void fechaArquivo(FILE *);
 void apresentaDados();
-FILE * abreArquivo(char *nome, char *modoAbertura);
-int verificaExistenciaArquivo( char *nome);
-char *validaTelefone(char *telefone, int *erro);
-int validaCPFrepetido(char *cpf);
-char *formataCPF(char *cpf);
-char *formataTelefone(char *telefone);
-char *formataPlaca(char *placa);
+FILE * abreArquivo(char *, char *);
+int verificaExistenciaArquivo( char *);
+char *validaTelefone(char *, int *);
+int validaCPFrepetido(char *);
+char *formataCPF(char *);
+char *formataTelefone(char *);
+char *formataPlaca(char *);
 void pesquisaPeloRegistro();
-int validaPlaca(char *placa);
-int validaChassiRepetido(char *chassi);
+int validaPlaca(char *);
+int validaChassiRepetido(char *);
 void cadastraVeiculo();
-int validaData(int dia, int mes, int ano);
-char *obtemEstado(int posicao, char *str);
-void leValidaInt(char *msn, char *msnErro, int valorMin, int valorMax, int *valor, int linha, int coluna);
-void leInt(char *msn, int *valor, int linha, int coluna);
-void leFloat(char *msn, float *valor, int linha, int coluna);
-void leValidaFloat(char *msn, char *msnErro, int valorMin, int valorMax, float *valor, int linha, int coluna);
+int validaData(int , int , int );
+char *obtemEstado(int , char *);
+void leValidaInt(char *, char *, int , int , int *, int , int );
+void leInt(char *, int *, int , int );
+void leFloat(char *, float *, int , int );
+void leValidaFloat(char *, char *, int , int , float *, int , int );
 void cadastroManutencoes();
-int validaPlacaRepetida(char *placa);
-void obtemDataAtual(int *dia, int * mes, int *ano);
-void apresentaMsg(char *msg);
-void *obtemDadosArquivo(char *nomeArquivo, int tamDados, int *qtdDados);
+int validaPlacaRepetida(char *);
+void obtemDataAtual(int *, int *, int *);
+void apresentaMsg(char *);
+void *obtemDadosArquivo(char *, int , int *);
 int apresentaProprietarios();
 void alteraProprietario();
-void apresentaProprietario(Proprietario proprietario);
-int recuperaDadosProprietario(int posicao, Proprietario *proprietario);
-void leValidaOpcao(char *msn, char *msnErro, char *opcoesValidas, char *opcao, int linha, int coluna);
-void gravaDadosProprietario(Proprietario *proprietario, int posicao);
+void apresentaProprietario(Proprietario );
+int recuperaDadosProprietario(int , Proprietario *);
+void leValidaOpcao(char *, char *, char *, char *, int , int );
+void gravaDadosProprietario(Proprietario *, int );
 void excluiProprietario();
-int verificaExisteManutencao(char *cpf);
-void pulaLinhas(char *titulo, int *linha, int *coluna);
+int verificaExisteManutencao(char *);
+void pulaLinhas(char *, int *, int *);
 void apresentaVeiculosManutencao();
 void consultaDadosVeiculo();
-int comparaNome(const void *p1, const void *p2);
+int comparaNome(const void *, const void *);
 
 
 int main(void) {
@@ -176,8 +176,8 @@ int main(void) {
   getch();
   return 0;
 }
-//Objetivo: Apresentar o nome, e o endereÁo da oficina
-//Par‚metro: Linha e coluna de onde vai apresentar os dados e S/N para apresenda o endereÁo
+//Objetivo: Apresentar o nome, e o endere√ßo da oficina
+//Par√¢metro: Linha e coluna de onde vai apresentar os dados e S/N para apresenda o endere√ßo
 //Retorno: nenhum
 void apresentaNomeOficina(int coluna, int linha,char resp){
 	Oficina oficina;
@@ -221,7 +221,7 @@ int menuSimNao(char *msg){
 
 }
 //Objetivo: excluir veiculo
-//Par‚metros: nenhum
+//Par√¢metros: nenhum
 //Retorno: nenhuhm
 void excluiVeiculo() {
 	Veiculo veiculo;
@@ -293,7 +293,7 @@ void excluiVeiculo() {
 	}
 }
 // Objetivo : Gravar dados no arquivo
-// par‚metros: endereco da variavel veiculo, posicao do veiculo
+// par√¢metros: endereco da variavel veiculo, posicao do veiculo
 // Retorno : nenhum
 void gravaDadosVeiculo(Veiculo *veiculo, int posicao) {
 	FILE *arq;
@@ -311,7 +311,7 @@ void gravaDadosVeiculo(Veiculo *veiculo, int posicao) {
 	}
 }
 //Objetivo: apresentar veiculos no menu
-//Par‚metros: nenhum
+//Par√¢metros: nenhum
 //Retorno: opcao do menu
 int apresentaVeiculos() {
 	FILE *arq;
@@ -358,7 +358,7 @@ int apresentaVeiculos() {
 	return opcao;
 }
 // Objetivo : ler os dados de um veiculo do arquivo
-// par‚metros: numero do veiculo, endereco da variavel veiculo
+// par√¢metros: numero do veiculo, endereco da variavel veiculo
 // Retorno : 0- erro 1-sucesso
 int recuperaDadosVeiculo(int posicao, Veiculo *veiculos) {
 	FILE *arq;
@@ -380,7 +380,7 @@ int recuperaDadosVeiculo(int posicao, Veiculo *veiculos) {
 	return flag;
 } 
 //Objetivo: apresentar os dados de uma manutencao
-//Par‚metros: variavel proprietario
+//Par√¢metros: variavel proprietario
 //Retorno: nenhum
 void apresentaManutencao(Manutencao manutencao) {
 	
@@ -390,7 +390,7 @@ void apresentaManutencao(Manutencao manutencao) {
 	
 }
 //Objetivo: apresentar os dados de um veiculo
-//Par‚metros: variavel proprietario
+//Par√¢metros: variavel proprietario
 //Retorno: nenhum
 void apresentaVeiculo(Veiculo veiculo) {
 	
@@ -399,7 +399,7 @@ void apresentaVeiculo(Veiculo veiculo) {
 	
 }
 //Objetivo: Alterar dado de um veiculo
-//Par‚metro: Nada
+//Par√¢metro: Nada
 //Retorna: nada
 void alteraVeiculo(){
 	Veiculo veiculo;
@@ -448,7 +448,7 @@ void alteraVeiculo(){
 	}
 }
 //Objetiro: criar um arquivo caso nao exista
-//Par‚metros: endereÁo do nome
+//Par√¢metros: endere√ßo do nome
 //Retorno: nenhum
 void criaArquivoNaoExistente(char *nome) {
 	int verifica;
@@ -459,8 +459,8 @@ void criaArquivoNaoExistente(char *nome) {
 		fechaArquivo(arq);
 	}
 }
-//Objetivo: caso seja a primeira execuÁ„o do programa, ler dados da oficina, caso n„o, ler esses dados
-//Par‚metros: nenhum
+//Objetivo: caso seja a primeira execu√ß√£o do programa, ler dados da oficina, caso n√£o, ler esses dados
+//Par√¢metros: nenhum
 //Retorno: oficina
 Oficina criaArquivoOficina() {
 	Oficina oficina;
@@ -496,7 +496,7 @@ Oficina criaArquivoOficina() {
 	return oficina;
 }
 //Objetiro: verificar existencia de um arquivo
-//Par‚metros: endereÁo do nome 
+//Par√¢metros: endere√ßo do nome 
 //Retorno: 0 nao existe 1 existe
 int verificaExistenciaArquivo( char *nome) {
 	int verifica = 0;
@@ -510,7 +510,7 @@ int verificaExistenciaArquivo( char *nome) {
 	return verifica;
 }
 //Objetiro: fechar um arquivo
-//Par‚metros: endereÁo do arquivo
+//Par√¢metros: endere√ßo do arquivo
 //Retorno: nenhum
 void fechaArquivo(FILE *arq) {
 	if(fclose(arq) != 0) {
@@ -518,7 +518,7 @@ void fechaArquivo(FILE *arq) {
 	}
 }
 //Objetiro: abrir um arquivo
-//Par‚metros: endereÁo do nome e modo de abertura do arquivo
+//Par√¢metros: endere√ßo do nome e modo de abertura do arquivo
 //Retorno: nenhum
 FILE * abreArquivo(char *nome, char *modoAbertura) {
     FILE *arq;
@@ -533,7 +533,7 @@ FILE * abreArquivo(char *nome, char *modoAbertura) {
     return  arq; 
 }
 //Objetivo: obter o estado que foi lido pelo menu vertical
-//Par‚metros: posicao(menu vertical) e endereÁo da string
+//Par√¢metros: posicao(menu vertical) e endere√ßo da string
 //Retorno: estado
 char *obtemEstado(int posicao, char *str) {
 	switch(posicao) {
@@ -622,7 +622,7 @@ char *obtemEstado(int posicao, char *str) {
 	return str;
 }
 // Objetivo: Le numero inteiro
-// Par‚metros: endereco de memoria  da string  mensagem 
+// Par√¢metros: endereco de memoria  da string  mensagem 
 // Retorna: 
 void leInt(char *msn, int *valor, int linha, int coluna) {
 	int ret = 0;
@@ -641,8 +641,8 @@ void leInt(char *msn, int *valor, int linha, int coluna) {
 	} while(ret == 0);
 }
 // Objetivo: Le e validar numero inteiro
-// Par‚metros: endereco de memoria  da string  mensagem e mensagem de erro
-//              valor minimo e valor maximo, endereÁo da variavel sendo lida, linha e coluna
+// Par√¢metros: endereco de memoria  da string  mensagem e mensagem de erro
+//              valor minimo e valor maximo, endere√ßo da variavel sendo lida, linha e coluna
 // Retorna: 
 void leValidaInt(char *msn, char *msnErro, int valorMin, int valorMax, int *valor, int linha, int coluna) {	
 
@@ -660,7 +660,7 @@ void leValidaInt(char *msn, char *msnErro, int valorMin, int valorMax, int *valo
 	} while(*valor < valorMin || *valor > valorMax);
 }
 // Objetivo: Le numero real
-// Par‚metros: endereco de memoria  da string  mensagem e da variavel a ser lida e linha e coluna
+// Par√¢metros: endereco de memoria  da string  mensagem e da variavel a ser lida e linha e coluna
 // Retorna: 
 void leFloat(char *msn, float *valor, int linha, int coluna) {
 	int ret = 0;
@@ -679,8 +679,8 @@ void leFloat(char *msn, float *valor, int linha, int coluna) {
 	} while(ret == 0);
 }
 // Objetivo: Le e validar numero real
-// Par‚metros: endereco de memoria  da string  mensagem e mensagem de erro
-//              valor minimo e valor maximo, endereÁo da variavel sendo lida, linha e coluna
+// Par√¢metros: endereco de memoria  da string  mensagem e mensagem de erro
+//              valor minimo e valor maximo, endere√ßo da variavel sendo lida, linha e coluna
 // Retorna: 
 void leValidaFloat(char *msn, char *msnErro, int valorMin, int valorMax, float *valor, int linha, int coluna) {	
 
@@ -698,8 +698,8 @@ void leValidaFloat(char *msn, char *msnErro, int valorMin, int valorMax, float *
 	} while(*valor < valorMin || *valor > valorMax);
 }
 //Objetivo   : ler e validar uma string.
-//Par‚metros : EndereÁo da string titulo,endereÁo da msg de Erro string e endereÁo da string,
-//            alÈm da quantidade m·xima de caracteres.
+//Par√¢metros : Endere√ßo da string titulo,endere√ßo da msg de Erro string e endere√ßo da string,
+//            al√©m da quantidade m√°xima de caracteres.
 //Retorno    : Nenhum
 void leValidaTexto(char *titulo, char *msgErro, char *str, int max, int coluna, int linha) {
      int tam, cont;
@@ -719,7 +719,7 @@ void leValidaTexto(char *titulo, char *msgErro, char *str, int max, int coluna, 
      } while(tam < 1 || str[0] == ' ');
 }
 //Objetivo   : Tirar um terminador
-//Par‚metros : EndereÁos dastring
+//Par√¢metros : Endere√ßos dastring
 //Retorno    : Nenhum
 void tiraTerminador(char *str) {
      if (str[strlen(str) - 1] == '\n'){
@@ -727,7 +727,7 @@ void tiraTerminador(char *str) {
      }
 }
 //Descricao : Desenha uma moldura na tela                    
-//Par‚metros: linhaInicial - linha inicial da moldura, colunaInicial - coluna inicial da moldura      
+//Par√¢metros: linhaInicial - linha inicial da moldura, colunaInicial - coluna inicial da moldura      
 //            linhaFinal   - linha final da moldura, colunaFinal - coluna final da moldura          
 //            corFundoAtual - cor do fundo atual, corLetra  - cor do fundo atual                 
 //Retorno   : nenhum                                           
@@ -773,14 +773,14 @@ void desenhaMoldura(int linhaInicial, int colunaInicial, int linhaFinal, int col
     retornaCor(corFundoAtual, corLetraAtual);
 }
 //Descricao : retorna a cor de fundo e de texto              
-//Par‚metros: corFundo - cor de fundo e corTexto - cor do texto  
+//Par√¢metros: corFundo - cor de fundo e corTexto - cor do texto  
 //Retorno   : nenhum                                          
 void retornaCor(int corFundo,int corTexto) {
     textbackground(corFundo);
     textcolor(corTexto);
 }   
 //Descricao : formatar um telefone                                  
-//Par‚metros: endereÁo da string telefone                 
+//Par√¢metros: endere√ßo da string telefone                 
 //Retorno   : telefone formatado
 char *formataTelefone(char *telefone) {
 	static char telefoneAux[15];
@@ -799,7 +799,7 @@ char *formataTelefone(char *telefone) {
 	}
 } 
 //Descricao : formatar uma placa
-//Par‚metros: endereÁo da string placa
+//Par√¢metros: endere√ßo da string placa
 //Retorno   : placa formatada
 char *formataPlaca(char *placa) {
 	static char placaAux[10];
@@ -812,7 +812,7 @@ char *formataPlaca(char *placa) {
 	}
 }
 //Descricao : formatar um CPF                                  
-//Par‚metros: endereÁo da string cpf                 
+//Par√¢metros: endere√ßo da string cpf                 
 //Retorno   : cpf formatado
 char *formataCPF(char *cpf) {
 	static char cpfAux[15];
@@ -826,10 +826,10 @@ char *formataCPF(char *cpf) {
     
 }                                       
 //Descricao : Valida um CPF                                  
-//Par‚metros: endereÁo inicial da string cpf                 
-//Retorno   : 1 - cpf v·lido, 0 - cpf inv·lido                
+//Par√¢metros: endere√ßo inicial da string cpf                 
+//Retorno   : 1 - cpf v√°lido, 0 - cpf inv√°lido                
 int validaCPF(char *cpf) {
-	// cpfs inv·lidos        
+	// cpfs inv√°lidos        
 	char *cpfInval[] = {"00000000000","11111111111", "22222222222", "33333333333", "44444444444", 
 		"55555555555", "66666666666", "77777777777", "88888888888", "99999999999"}; 
 	int cont, retorno = 1, aux2, dig[11], soma = 0, digVeri[2];
@@ -848,7 +848,7 @@ int validaCPF(char *cpf) {
      if(retorno == 0)
         return retorno;
       
-     // transforma os caracteres do cpf em n˙meros     
+     // transforma os caracteres do cpf em n√∫meros     
      for(cont = 0; cont < strlen(cpf); cont++) {
             dig[cont] = cpf[cont] - '0';
      }
@@ -878,17 +878,17 @@ int validaCPF(char *cpf) {
      return retorno;
 }
 //Descricao : Apresenta um menu vertical e retorna a opcao selecionada                                    * 
-//Par‚metros: n - Numero de itens                            
-//            imenu - DescriÁ„o dos itens                    
+//Par√¢metros: n - Numero de itens                            
+//            imenu - Descri√ß√£o dos itens                    
 //            c1 - cor do texto do menu                      
 //            c2 - cor da marca do item selecionado          
-//            linha - linha inicial para instalaÁ„o do menu  
-//            coluna - coluna inicial para instalaÁ„o do menu
-//            ini - n˙mero da opÁ„o inicial do menu a ser  selecionada                          
+//            linha - linha inicial para instala√ß√£o do menu  
+//            coluna - coluna inicial para instala√ß√£o do menu
+//            ini - n√∫mero da op√ß√£o inicial do menu a ser  selecionada                          
 //             moldura - indicador se deve desenhar o menu dentro de uma moldura                       
 //             corFundoAtual - cor do fundo a ser restituida a tela com a retirada do menu                       
 //             corLetra - cor da letra a ser restituida a tela com a retirada do menu                       
-//Retorno   : n˙mero do item do menu selecionado              
+//Retorno   : n√∫mero do item do menu selecionado              
 int menuVertical(int n, char *imenu[], int c1, int c2, int linha, int coluna, int ini, int moldura, int corFundoAtual, int corLetraAtual) {
 	int tecla, sel_b, sel, i, val, tamMaiorTexto;
          
@@ -964,8 +964,8 @@ int menuVertical(int n, char *imenu[], int c1, int c2, int linha, int coluna, in
 
 	return(sel_b + 1); 	// Retorna item selecionado + 1 (nao retorna 0)
 }
-//Objetivo: validar o n˙mero do telefone
-//Par‚metros: endereÁo da string telefone
+//Objetivo: validar o n√∫mero do telefone
+//Par√¢metros: endere√ßo da string telefone
 //Retorno: 0 caso seja invalido ou 1 caso seja valido
 char *validaTelefone(char *telefone, int *erro) {
 	int cont, i;
@@ -991,7 +991,7 @@ char *validaTelefone(char *telefone, int *erro) {
 		memcpy(sddd, telefone, 2);
 	}
 	ddd = atoi(sddd);
-	//verifica se o codigo do ddd È valido
+	//verifica se o codigo do ddd √© valido
 	if(ddd < 11 || ddd > 99 || ddd % 10 == 0) {
 		*erro = 0;
 		sprintf(msg, "Telefone/celular com ddd invalido.");
@@ -1000,14 +1000,14 @@ char *validaTelefone(char *telefone, int *erro) {
 		return msg;
 		
 	
-	//verifica se o telefone È celular ou fixo
+	//verifica se o telefone √© celular ou fixo
 	if(strlen(telefone) == 11) {
 		//pega o primeiro numero apos o ddd
 		for(i = 2; i < 3; i++) {
 			memcpy(primeiro, (telefone + i), 1);
 		}
 		primeiroNro = atoi(primeiro);
-		//verifica se o primeiro numero apos o ddd È 9
+		//verifica se o primeiro numero apos o ddd √© 9
 		if(primeiroNro != 9) {
 			*erro = 0;
 			sprintf(msg, "O primeiro digito apos o ddd do celular deve ser 9.");
@@ -1042,7 +1042,7 @@ char *validaTelefone(char *telefone, int *erro) {
 	return msg;	
 }
 //Objetivo: validar placa
-//Par‚metros: endereÁo da string placa
+//Par√¢metros: endere√ßo da string placa
 //Retorno: 0 caso seja invalida ou 1 caso seja valida
 int validaPlaca(char *placa) {
 	int flag = 1, cont, cont2, tam;
@@ -1084,7 +1084,7 @@ int validaPlaca(char *placa) {
 		return flag;	
 }
 //Objetivo: validar data
-//Par‚metros: dia, mes e ano
+//Par√¢metros: dia, mes e ano
 //Retorno: 0 erro 1 sucesso
 int validaData(int dia, int mes, int ano) {
 	int retorno = 1;    
@@ -1115,7 +1115,7 @@ int validaData(int dia, int mes, int ano) {
     return retorno;
 }
 //Objetivo: validar cpf repetido
-//Par‚metros: endereÁo da string cpf
+//Par√¢metros: endere√ßo da string cpf
 //Retorno: 0 caso seja invalido ou 1 caso seja valido
 int validaCPFrepetido(char *cpf) {
 	FILE *arq;
@@ -1137,7 +1137,7 @@ int validaCPFrepetido(char *cpf) {
 	return flag;
 }
 //Objetivo: validar placa repetida
-//Par‚metros: endereÁo da string placa
+//Par√¢metros: endere√ßo da string placa
 //Retorno: 0 caso seja invalido ou 1 caso seja valido
 int validaPlacaRepetida(char *placa) {
 	FILE *arq;
@@ -1159,7 +1159,7 @@ int validaPlacaRepetida(char *placa) {
 	return flag;
 }
 //Objetivo   : Gerenciar vendas
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void menuManutencao() {
 	char *menu[] = {"Adicionar manutencao", "Excluir manutencao", "Voltar"}, opcao;
@@ -1181,7 +1181,7 @@ void menuManutencao() {
 	} while(opcao != 3 && opcao != 0);
 }
 //Objetivo: excluir manutencao
-//Par‚metros: nenhum
+//Par√¢metros: nenhum
 //Retorno: nenhuhm
 void excluiManutencao() {
 	Manutencao manutencao;
@@ -1245,7 +1245,7 @@ void excluiManutencao() {
 	}
 }
 // Objetivo : ler os dados de um funcionario do arquivo
-// par‚metros: numero do proprietario, endereco da variavel proprietario
+// par√¢metros: numero do proprietario, endereco da variavel proprietario
 // Retorno : 0- erro 1-sucesso
 int recuperaDadosManutencao(int posicao, Manutencao *manutencao) {
 	FILE *arq;
@@ -1267,8 +1267,8 @@ int recuperaDadosManutencao(int posicao, Manutencao *manutencao) {
 	return flag;
 } 
 
-//Objetivo: apresentar manutenÁıes no menu
-//Par‚metros: nenhum
+//Objetivo: apresentar manuten√ß√µes no menu
+//Par√¢metros: nenhum
 //Retorno: opcao do menu
 int apresentaManutencoes() {
 	FILE *arq;
@@ -1319,7 +1319,7 @@ int apresentaManutencoes() {
 	return opcao;
 }
 //Objetivo   : cadastrar dados da manutencao
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void cadastroManutencoes() {
 	FILE *arq;
@@ -1384,9 +1384,9 @@ void cadastroManutencoes() {
 		}
 	}	
 }
-//Objetivo: Verificar se o veiculo ja realizou manutenÁ„o no dia
-//Par‚metros: PosiÁ„o do veÌculo no arquivo e a placa do veÌculo
-//Retorno: 0 caso o veiculo ja tenha realizado manutenÁ„o no dia ou 1 caso nao tenha realizado
+//Objetivo: Verificar se o veiculo ja realizou manuten√ß√£o no dia
+//Par√¢metros: Posi√ß√£o do ve√≠culo no arquivo e a placa do ve√≠culo
+//Retorno: 0 caso o veiculo ja tenha realizado manuten√ß√£o no dia ou 1 caso nao tenha realizado
 int verificaManutencaoDia(int posicaoVeic, char *placa){
 	Data dataAux;
 	Manutencao manutencaoAux;
@@ -1414,7 +1414,7 @@ int verificaManutencaoDia(int posicaoVeic, char *placa){
 	return flag;
 }
 //Objetivo: obter hora do sistema
-//Par‚metros: edereco de dia, mes e ano
+//Par√¢metros: edereco de dia, mes e ano
 //Retorno: nenhum
 void obtemDataAtual(int *dia, int * mes, int *ano) {
    time_t t;
@@ -1426,8 +1426,8 @@ void obtemDataAtual(int *dia, int * mes, int *ano) {
    *mes      = dataAtual->tm_mon+1;
    *ano      = 1900+dataAtual->tm_year;
 }
-//Objetivo: pular linhas e fazer a separaÁ„o
-//Par‚metros: endereco do titulo, linha e coluna
+//Objetivo: pular linhas e fazer a separa√ß√£o
+//Par√¢metros: endereco do titulo, linha e coluna
 //Retorno: nenhum
 void pulaLinhas(char *titulo, int *linha, int *coluna) {
 	int cont;
@@ -1450,7 +1450,7 @@ void pulaLinhas(char *titulo, int *linha, int *coluna) {
 	gotoxy(*coluna, *linha);
 }
 //Objetivo   : apresentar dados cadastrados
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void apresentaDados() {
 	char *menu[] = {"Proprietarios", "Veiculos","Manutencao","Voltar"}, opcao;
@@ -1475,7 +1475,7 @@ void apresentaDados() {
 	} while(opcao != 4 && opcao != 0);
 }
 //Objetivo: Apresentar todos os proprietarios
-//Par‚metro: nada
+//Par√¢metro: nada
 //Retorno:nada
 void apresentaTodosProp(){
 	FILE *arq;
@@ -1505,11 +1505,11 @@ void apresentaTodosProp(){
 		}
 		getch();
 	}else{
-		apresentaMsg("N„o existem dados cadastrados.");
+		apresentaMsg("N√£o existem dados cadastrados.");
 	}
 }
 //Objetivo:Apresentar todos os veiculos
-//Par‚metro: Nada
+//Par√¢metro: Nada
 //Retorno:Nada
 void apresentaTodosVeic(){
 	FILE *arq;
@@ -1539,11 +1539,11 @@ void apresentaTodosVeic(){
 		}
 		getch();
 	}else{
-		apresentaMsg("N„o existem dados cadastrados.");
+		apresentaMsg("N√£o existem dados cadastrados.");
 	}
 }
 //Objetivo:Apresentar todos as manutencoes
-//Par‚metro: Nada
+//Par√¢metro: Nada
 //Retorno:Nada
 void apresentaTodasManu(){
 	FILE *arq;
@@ -1575,11 +1575,11 @@ void apresentaTodasManu(){
 		}
 		getch();
 	}else{
-		apresentaMsg("N„o existem dados cadastrados.");
+		apresentaMsg("N√£o existem dados cadastrados.");
 	}
 }
-//Objetivo   : Gerenciar apresentaÁıes e pesquisas
-//Par‚metros :
+//Objetivo   : Gerenciar apresenta√ß√µes e pesquisas
+//Par√¢metros :
 //Retorno    :
 void pesquisasConsultas() {
 	char *menu[] = {"Apresentar dados cadastrados", "Apresentar veiculos de um proprietario", "Consultar dados de um veiculo",
@@ -1612,7 +1612,7 @@ void pesquisasConsultas() {
 	} while(opcao != 6&& opcao != 0);
 }
 //Objetivo   : apresentar dados das manutencoes de um periodo de tempo
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void apresentaManuTempo(){
 	FILE *arqMan;
@@ -1704,8 +1704,8 @@ void apresentaManuTempo(){
 		apresentaMsg("Nao existem manutencoes.");
 	}
 }
-//Objetivo: Consultar manutenÁıes e dados do propriet·rio de um veÌculo
-//Par‚metros: nenhum
+//Objetivo: Consultar manuten√ß√µes e dados do propriet√°rio de um ve√≠culo
+//Par√¢metros: nenhum
 //Retorno: nenhum
 void consultaDadosVeiculo() {
 	int posicao, qtdManutencoes = 0, cont, qtdProps = 0, posicaoRep, flag = 0, linha, coluna, existeMan = 0;
@@ -1827,7 +1827,7 @@ void consultaDadosVeiculo() {
 	}	
 }
 //Objetivo   : apresentar dados de um proprietario pelo nome
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void apresentaDadosPropNom() {
 	FILE *arqProp;
@@ -1882,7 +1882,7 @@ void apresentaDadosPropNom() {
 	}
 }
 //Objetivo: comparar dois nomes
-//Par‚metros: dois endereÁos de memoria
+//Par√¢metros: dois endere√ßos de memoria
 //Retorno: 0, menor ou maior que zero
 int comparaNome(const void *p1, const void *p2) {
 	Proprietario *f1,*f2;
@@ -1892,8 +1892,8 @@ int comparaNome(const void *p1, const void *p2) {
 	
 	return stricmp(f1->nome,f2->nome); 
 }
-//Objetivo: apresentar veiculos de um proprietario que ja sofreu manutenÁ„o
-//Par‚metros: nenhum
+//Objetivo: apresentar veiculos de um proprietario que ja sofreu manuten√ß√£o
+//Par√¢metros: nenhum
 //Retorno: nenhum
 void apresentaVeiculosManutencao() {
 	FILE *arq;	
@@ -2012,7 +2012,7 @@ void apresentaVeiculosManutencao() {
 	}
 }
 //Objetivo   : Gerenciar proprietarios
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void menuProprietarios() {
 	char *menu[] = {"Adicionar proprietario", "Alterar proprietario","Excluir proprietario", "Voltar"}, opcao;
@@ -2037,8 +2037,8 @@ void menuProprietarios() {
 		}
 	} while(opcao != 4 && opcao != 0);
 }
-//Objetivo: verificar se existe no arquivo de manutenÁıes uma placa
-//Par‚metros: endereÁo da placa
+//Objetivo: verificar se existe no arquivo de manuten√ß√µes uma placa
+//Par√¢metros: endere√ßo da placa
 //Retorno: 0 caso exista 1 caso nao exista
 int verificaExisteManutencaoCarro(char *placa) {
 	Manutencao manutencao;
@@ -2058,8 +2058,8 @@ int verificaExisteManutencaoCarro(char *placa) {
 	
 	return flag;
 }
-//Objetivo: verificar se existe no arquivo de manutenÁıes
-//Par‚metros: endereÁo de cpf
+//Objetivo: verificar se existe no arquivo de manuten√ß√µes
+//Par√¢metros: endere√ßo de cpf
 //Retorno: 0 caso exista 1 caso nao exista
 int verificaExisteManutencao(char *cpf) {
 	Manutencao manutencao;
@@ -2080,7 +2080,7 @@ int verificaExisteManutencao(char *cpf) {
 	return flag;
 }
 //Objetivo: excluir proprietario
-//Par‚metros: nenhum
+//Par√¢metros: nenhum
 //Retorno: nenhuhm
 void excluiProprietario() {
 	Proprietario proprietario;
@@ -2214,7 +2214,7 @@ void alteraProprietario() {
 	}
 }
 // Objetivo : ler os dados de um funcionario do arquivo
-// par‚metros: numero do proprietario, endereco da variavel proprietario
+// par√¢metros: numero do proprietario, endereco da variavel proprietario
 // Retorno : 0- erro 1-sucesso
 int recuperaDadosProprietario(int posicao, Proprietario *proprietario) {
 	FILE *arq;
@@ -2236,13 +2236,13 @@ int recuperaDadosProprietario(int posicao, Proprietario *proprietario) {
 	return flag;
 } 
 // Objeyivo : Gravar dados no arquivo
-// par‚metros: endereco da variavel funcionarios, numero do funcionario
+// par√¢metros: endereco da variavel funcionarios, numero do funcionario
 // Retorno : nenhum
 void gravaDadosProprietario(Proprietario *proprietario, int posicao) {
 	FILE *arq;
 	
 	if((arq = abreArquivo(ARQ_PROPRIETARIOS, "r+b")) != NULL){
-		if(fseek(arq, sizeof(Proprietario) * (posicao - 1), SEEK_SET) == 0) { //Vai pra posiÁ„o dentro do arquivo.
+		if(fseek(arq, sizeof(Proprietario) * (posicao - 1), SEEK_SET) == 0) { //Vai pra posi√ß√£o dentro do arquivo.
 			if(fwrite(proprietario, sizeof(Proprietario), 1, arq) == 1) {
 				apresentaMsg("Dados gravados com sucesso.");
 			}else
@@ -2254,14 +2254,14 @@ void gravaDadosProprietario(Proprietario *proprietario, int posicao) {
 	}
 }
 //Objetivo: apresentar os dados de um proprietario
-//Par‚metros: variavel proprietario
+//Par√¢metros: variavel proprietario
 //Retorno: nenhum
 void apresentaProprietario(Proprietario proprietario) {
 	printf("%-20.20s | %-15.15s | %-15.15s | %-20.20s | %-10.10s | %-7.7s \n",proprietario.nome,formataCPF(proprietario.cpf), 
 	formataTelefone(proprietario.telefone),proprietario.endereco.descricao, proprietario.endereco.cidade, proprietario.endereco.estado);
 }
 //Objetivo: apresentar funcionarios no menu
-//Par‚metros: nenhum
+//Par√¢metros: nenhum
 //Retorno: opcao do menu
 int apresentaProprietarios() {
 	FILE *arq;
@@ -2306,7 +2306,7 @@ int apresentaProprietarios() {
 	return opcao;
 }
 //Objetivo: obter quantidade de dados presentes no arquivo
-//Par‚metros: endereÁo do nome do arquivo e tamanho dos dados
+//Par√¢metros: endere√ßo do nome do arquivo e tamanho dos dados
 //Retorno: quantidade de dados no arquivo
 int obtemQtdDadosArquivo(char *nomeArquivo, int tamDados) {
 	FILE *arq;
@@ -2322,7 +2322,7 @@ int obtemQtdDadosArquivo(char *nomeArquivo, int tamDados) {
 	return qtdDados;
 }
 //Objetivo: obter dados do arquivo
-//Par‚metros: endereco do nome do arquivo, tamanho dos dados e endereco da quantidade de dados
+//Par√¢metros: endereco do nome do arquivo, tamanho dos dados e endereco da quantidade de dados
 //Retorno: dados recuperado
 void *obtemDadosArquivo(char *nomeArquivo, int tamDados, int *qtdDados) {
 	FILE *arq;
@@ -2347,7 +2347,7 @@ void *obtemDadosArquivo(char *nomeArquivo, int tamDados, int *qtdDados) {
 	return dados;
 }
 //Objetiro: cadastrar proprietario
-//Par‚metros: endereÁo do nome e modo de abertura do arquivo
+//Par√¢metros: endere√ßo do nome e modo de abertura do arquivo
 //Retorno: nenhum
 void cadastroProprietario() {
 	FILE *arq;
@@ -2404,7 +2404,7 @@ void cadastroProprietario() {
 	}
 }
 //Objetivo   : Gerenciar veiculos
-//Par‚metros :
+//Par√¢metros :
 //Retorno    :
 void menuVeiculos() {
 	char *menu[] = {"Adicionar veiculo", "Alterar veiculo", "Excluir veiculo", "Voltar"}, opcao;
@@ -2429,7 +2429,7 @@ void menuVeiculos() {
 	} while(opcao != 4 && opcao != 0);
 }
 //Objetivo   : cadastrar dados de veiculos
-//Par‚metros : nenhum
+//Par√¢metros : nenhum
 //Retorno    : nenhum
 void cadastraVeiculo() {
 	FILE *arq;
@@ -2474,7 +2474,7 @@ void cadastraVeiculo() {
 	}
 }
 //Descricao : apresentar mensagem de erro          
-//Par‚metros: msg                    
+//Par√¢metros: msg                    
 //Retorno   : nenhum                                          
 void apresentaMsg(char *msg) {
    int colunaInicial;
@@ -2488,7 +2488,7 @@ void apresentaMsg(char *msg) {
    system("cls");
 }
 // Objetivo: Ler uma opcao 
-// Par‚metros: endereco de memoria  da string  mensagem, mensagem de erro e das opcoes validas e endereÁo da opcao
+// Par√¢metros: endereco de memoria  da string  mensagem, mensagem de erro e das opcoes validas e endere√ßo da opcao
 // Retorna: opcao valida
 void leValidaOpcao(char *msn, char *msnErro, char *opcoesValidas, char *opcao, int linha, int coluna) {
         
@@ -2507,7 +2507,7 @@ void leValidaOpcao(char *msn, char *msnErro, char *opcoesValidas, char *opcao, i
 	} while(strchr(opcoesValidas, *opcao) == NULL);
 }
 //Descricao : limpa uma janela da tela                       
-//Par‚metros: linhaInicial - linha inicial da janela         
+//Par√¢metros: linhaInicial - linha inicial da janela         
 //            colunaInicial - coluna inicial da janela       
 //     
 //       linhaFinal   - linha final da janela           
